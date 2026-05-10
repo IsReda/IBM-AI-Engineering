@@ -23,7 +23,7 @@ from datetime import datetime
 from pathlib import Path
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-REPO_ROOT = Path("/Users/redakabouche/Documents/IBM_AI_Engineering")
+REPO_ROOT = Path(__file__).parent.parent
 BRANCH    = "main"
 
 # Chapter keyword map — script detects chapter from notebook content/title
