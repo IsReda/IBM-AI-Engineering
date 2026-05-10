@@ -29,32 +29,32 @@ pip install jupytext nbconvert
 ```bash
 # Copy scripts
 cp /path/to/downloaded/CLAUDE_PROMPT.md \
-   /Users/redakabouche/Documents/IBM_AI_Engineering/scripts/
+   ~/Documents/IBM_AI_Engineering/scripts/
 
 cp /path/to/downloaded/sync_notebook.py \
-   /Users/redakabouche/Documents/IBM_AI_Engineering/scripts/
+   ~/Documents/IBM_AI_Engineering/scripts/
 
 # Copy VS Code task
 cp /path/to/downloaded/tasks.json \
-   /Users/redakabouche/Documents/IBM_AI_Engineering/.vscode/
+   ~/Documents/IBM_AI_Engineering/.vscode/
 
 # Copy reference files
 cp /path/to/downloaded/SKILL.md \
-   /Users/redakabouche/Documents/IBM_AI_Engineering/
+   ~/Documents/IBM_AI_Engineering/
 
 cp /path/to/downloaded/USER_GUIDE.md \
-   /Users/redakabouche/Documents/IBM_AI_Engineering/
+   ~/Documents/IBM_AI_Engineering/
 ```
 
 ### Step 1.3 · Open your repo in VS Code
 ```bash
-code /Users/redakabouche/Documents/IBM_AI_Engineering
+code ~/Documents/IBM_AI_Engineering
 ```
 > 💡 Pin this to your VS Code — you will open it every study session
 
 ### Step 1.4 · Push the pipeline files to GitHub
 ```bash
-cd /Users/redakabouche/Documents/IBM_AI_Engineering
+cd ~/Documents/IBM_AI_Engineering
 git add .
 git commit -m "⚙️ Add IBM AI pipeline scripts and guides"
 git push origin main
@@ -110,7 +110,7 @@ The script auto-detects which chapter folder to use based on the notebook conten
 
 ### Basic usage
 ```bash
-cd /Users/redakabouche/Documents/IBM_AI_Engineering
+cd ~/Documents/IBM_AI_Engineering
 python scripts/sync_notebook.py ~/Downloads/YourNotebook.ipynb
 ```
 
@@ -179,7 +179,7 @@ Press `Cmd+Shift+P` → type "Run Task" → choose from:
 
 ### ❌ "fatal: not a git repository"
 ```bash
-cd /Users/redakabouche/Documents/IBM_AI_Engineering
+cd ~/Documents/IBM_AI_Engineering
 git init
 git remote add origin https://github.com/IsReda/IBM-AI-Engineering.git
 git pull origin main
@@ -220,7 +220,7 @@ Make sure you pasted the FULL content of `CLAUDE_PROMPT.md` — everything below
 
 ```bash
 # Navigate to repo
-cd /Users/redakabouche/Documents/IBM_AI_Engineering
+cd ~/Documents/IBM_AI_Engineering
 
 # Sync a notebook
 python scripts/sync_notebook.py ~/Downloads/Notebook.ipynb

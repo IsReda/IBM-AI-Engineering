@@ -101,7 +101,7 @@ Available tasks:
 
 ```bash
 # Navigate to repo
-cd /Users/redakabouche/Documents/IBM_AI_Engineering
+cd ~/Documents/IBM_AI_Engineering
 
 # Check status
 git status
