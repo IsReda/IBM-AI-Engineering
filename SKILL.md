@@ -101,7 +101,7 @@ Available tasks:
 
 ```bash
 # Navigate to repo
-cd ~/Documents/IBM_AI_Engineering
+cd ~/claude-workspace/learning/IBM_AI_Engineering
 
 # Check status
 git status
