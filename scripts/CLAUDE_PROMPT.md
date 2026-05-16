@@ -59,16 +59,16 @@ Every notebook must follow this structure:
 - Professional, clean, ready to push to GitHub
 
 My course structure for reference:
-- 01_ML_with_Python
-- 02_Deep_Learning_Keras  ← I am here now
-- 03_Scalable_ML_Apache_Spark
-- 04_Deep_Learning_PyTorch
-- 05_AI_Capstone_Deep_Learning
-- 06_ML_Capstone
-- 07_GenAI_LLMs_Architecture
-- 08_GenAI_Foundational_Models_NLP
-- 09_GenAI_Language_Modeling_Transformers
-- 10_GenAI_Engineering_Fine_Tuning
-- 11_GenAI_Advanced_Fine_Tuning_LLMs
-- 12_AI_Agents_RAG_LangChain
-- 13_Project_GenAI_Apps_RAG_LangChain
+- [x] 01 · Machine Learning with Python
+- [ ] 02 · Intro to Deep Learning & Neural Networks with Keras  ← you are here
+- [ ] 03 · Deep Learning with Keras and TensorFlow
+- [ ] 04 · Introduction to Neural Networks and PyTorch
+- [ ] 05 · Deep Learning with PyTorch
+- [ ] 06 · AI Capstone Project with Deep Learning
+- [ ] 07 · Generative AI and LLMs: Architecture and Data Preparation
+- [ ] 08 · Gen AI Foundational Models for NLP & Language Understanding
+- [ ] 09 · Generative AI Language Modeling with Transformers
+- [ ] 10 · Generative AI Engineering and Fine-Tuning Transformers
+- [ ] 11 · Generative AI Advanced Fine-Tuning for LLMs
+- [ ] 12 · Fundamentals of AI Agents Using RAG and LangChain
+- [ ] 13 · Project: Generative AI Applications with RAG and LangChain

@@ -146,16 +146,16 @@ pip install jupytext nbconvert
 
 ## 📍 Current Progress
 
-- [x] 01 · ML with Python
-- [ ] 02 · Deep Learning & Keras  ← **you are here**
-- [ ] 03 · Scalable ML on Apache Spark
-- [ ] 04 · Deep Learning with PyTorch
-- [ ] 05 · AI Capstone with Deep Learning
-- [ ] 06 · ML Capstone
-- [ ] 07 · GenAI & LLMs Architecture
-- [ ] 08 · GenAI Foundational Models & NLP
-- [ ] 09 · GenAI Language Modeling with Transformers
-- [ ] 10 · GenAI Engineering & Fine-Tuning
-- [ ] 11 · GenAI Advanced Fine-Tuning for LLMs
-- [ ] 12 · AI Agents with RAG & LangChain
-- [ ] 13 · Project: GenAI Apps with RAG & LangChain
+- [x] 01 · Machine Learning with Python
+- [ ] 02 · Intro to Deep Learning & Neural Networks with Keras  ← you are here
+- [ ] 03 · Deep Learning with Keras and TensorFlow
+- [ ] 04 · Introduction to Neural Networks and PyTorch
+- [ ] 05 · Deep Learning with PyTorch
+- [ ] 06 · AI Capstone Project with Deep Learning
+- [ ] 07 · Generative AI and LLMs: Architecture and Data Preparation
+- [ ] 08 · Gen AI Foundational Models for NLP & Language Understanding
+- [ ] 09 · Generative AI Language Modeling with Transformers
+- [ ] 10 · Generative AI Engineering and Fine-Tuning Transformers
+- [ ] 11 · Generative AI Advanced Fine-Tuning for LLMs
+- [ ] 12 · Fundamentals of AI Agents Using RAG and LangChain
+- [ ] 13 · Project: Generative AI Applications with RAG and LangChain
