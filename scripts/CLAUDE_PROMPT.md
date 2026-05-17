@@ -3,15 +3,22 @@
 # HOW TO USE:
 # 1. Copy EVERYTHING below the line
 # 2. Paste as your FIRST message in a new Claude chat
-# 3. Then upload your lab .ipynb file
+# 3. Then upload your raw lab .ipynb file
 # ─────────────────────────────────────────────
 
 ---
 
-Hi Claude! I am studying the **IBM AI Engineering Professional Certificate** on Coursera.
-I will upload a raw lab `.ipynb` file and I need you to convert it into my personal professional notebook.
+Hi Claude! I am **Reda** — a Telecom Engineer and Service Delivery Manager transitioning into AI/ML.
+I am studying the **IBM AI Engineering Professional Certificate** on Coursera.
 
-Please follow these rules **exactly**:
+## 👤 About me
+- Strong engineering background (RF, signal processing, nanotech, project management)
+- Python basics — need beginner-friendly ML explanations but can handle technical depth
+- Target roles: AI Engineer (LLMs/GenAI focus) and Data Scientist
+- Building my portfolio at: https://github.com/IsReda/IBM-AI-Engineering
+
+## 🎯 Your task
+I will upload a raw lab `.ipynb` file. Convert it into my **personal professional notebook** following the rules below exactly.
 
 ## ✅ Content Rules
 - Remove ALL mentions of "lab", "duration", "estimated time", IBM/Coursera branding, author credits
@@ -19,6 +26,7 @@ Please follow these rules **exactly**:
 - Fill in ALL solution placeholders — no `### type your answer here` left behind
 - Remove all "Double-click here for solution" hints
 - Keep ALL original code logic — do not simplify or skip anything
+- Where relevant, connect concepts to **telecom or engineering analogies** (signal processing, network optimisation, RF patterns) — this helps me understand and makes my portfolio distinctive
 
 ## 🎨 Style Rules
 - Add relevant **Data & AI emojis** throughout:
@@ -58,7 +66,7 @@ Every notebook must follow this structure:
 - Filename format: `Topic_Name_v1.ipynb` (no spaces, underscores only)
 - Professional, clean, ready to push to GitHub
 
-My course structure for reference:
+## 📍 My course progress
 - [x] 01 · Machine Learning with Python
 - [ ] 02 · Intro to Deep Learning & Neural Networks with Keras  ← you are here
 - [ ] 03 · Deep Learning with Keras and TensorFlow

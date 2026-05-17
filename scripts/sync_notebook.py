@@ -26,57 +26,70 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 BRANCH    = "main"
 
-# Chapter keyword map — script detects chapter from notebook content/title
+# Chapter keyword map — updated to match real folder names (May 2026)
 CHAPTER_MAP = {
     "01_ML_with_Python": [
         "supervised", "unsupervised", "regression", "classification",
         "clustering", "svm", "random forest", "decision tree",
-        "pipeline", "gridsearch", "scikit", "sklearn"
+        "pipeline", "gridsearch", "scikit", "sklearn", "knn",
+        "pca", "tsne", "umap", "recommender", "collaborative filtering"
     ],
-    "02_Deep_Learning_Keras": [
+    "02_Intro_Deep_Learning_Neural_Networks_Keras": [
         "keras", "neural network", "ann", "forward propagation",
         "backpropagation", "deep learning", "activation", "sigmoid",
-        "relu", "dense", "sequential", "epoch", "batch"
+        "relu", "dense", "sequential", "epoch", "batch",
+        "intro to deep", "introduction to deep"
     ],
-    "03_Scalable_ML_Apache_Spark": [
-        "spark", "pyspark", "rdd", "dataframe", "mllib",
-        "distributed", "hadoop", "apache"
+    "03_Deep_Learning_Keras_TensorFlow": [
+        "tensorflow", "tf.", "custom layer", "gan", "autoencoder",
+        "generative adversarial", "time series", "conv2d", "keras tensorflow",
+        "deep q", "dqn", "reinforcement keras"
     ],
-    "04_Deep_Learning_PyTorch": [
+    "04_Intro_Neural_Networks_PyTorch": [
         "pytorch", "torch", "tensor", "autograd", "nn.module",
-        "dataloader", "optimizer", "cuda"
+        "dataloader", "intro pytorch", "introduction pytorch",
+        "linear regression pytorch", "logistic regression pytorch"
     ],
-    "05_AI_Capstone_Deep_Learning": [
-        "capstone", "project", "end-to-end", "deployment"
+    "05_Deep_Learning_PyTorch": [
+        "deep pytorch", "cnn pytorch", "convolutional pytorch",
+        "dropout", "batch normalization", "batchnorm", "weight init",
+        "softmax pytorch", "transfer learning pytorch"
     ],
-    "06_ML_Capstone": [
-        "ml capstone", "machine learning project", "capstone ml"
+    "06_AI_Capstone_Deep_Learning": [
+        "capstone", "end-to-end", "geospatial", "land classification",
+        "vision transformer", "vit", "image classification project"
     ],
-    "07_GenAI_LLMs_Architecture": [
-        "transformer", "attention", "llm", "generative", "gpt",
-        "architecture", "encoder", "decoder", "self-attention"
+    "07_GenAI_LLMs_Architecture_Data_Prep": [
+        "generative ai", "llm", "large language", "tokenization",
+        "tokenizer", "nltk", "spacy", "bertokenizer", "xlnet",
+        "diffusion", "vae", "variational autoencoder", "architecture llm"
     ],
     "08_GenAI_Foundational_Models_NLP": [
-        "nlp", "bert", "tokenization", "embedding", "foundational",
-        "text classification", "sentiment", "named entity"
+        "word2vec", "cbow", "skip-gram", "embedding", "n-gram",
+        "seq2seq", "encoder decoder", "rnn nlp", "foundational nlp",
+        "one-hot", "bag of words", "bow"
     ],
     "09_GenAI_Language_Modeling_Transformers": [
-        "language model", "perplexity", "generation", "causal",
-        "masked language", "fine-tune transformer"
+        "attention mechanism", "self-attention", "positional encoding",
+        "gpt", "bert", "transformer model", "hugging face", "masked",
+        "causal language", "text classification transformer"
     ],
-    "10_GenAI_Engineering_Fine_Tuning": [
+    "10_GenAI_Engineering_Fine_Tuning_Transformers": [
         "fine-tuning", "fine tuning", "lora", "qlora", "peft",
-        "instruction tuning", "sft"
+        "instruction tuning", "sft", "supervised fine", "hugging face fine"
     ],
     "11_GenAI_Advanced_Fine_Tuning_LLMs": [
-        "rlhf", "dpo", "reward model", "advanced fine", "alignment"
+        "rlhf", "dpo", "direct preference", "reward model",
+        "ppo", "proximal policy", "alignment", "advanced fine tuning"
     ],
     "12_AI_Agents_RAG_LangChain": [
         "rag", "langchain", "agent", "retrieval", "vector store",
-        "chroma", "faiss", "tool use", "chain"
+        "chroma", "faiss", "tool use", "chain", "retrieval augmented",
+        "prompt engineering", "in-context learning"
     ],
     "13_Project_GenAI_Apps_RAG_LangChain": [
-        "genai app", "final project", "capstone genai", "rag app"
+        "gradio", "qa bot", "question answering bot", "final project genai",
+        "rag app", "vector database project", "langchain project"
     ],
 }
 # ──────────────────────────────────────────────────────────────────────────────
@@ -152,7 +165,6 @@ def generate_commit_message(nb, filename):
                 if line.startswith("# "):
                     title = line.strip("# ").strip()
                     return f"🧠 Add: {title}"
-    # Fallback to filename
     name = Path(filename).stem.replace("_", " ")
     return f"🧠 Add: {name}"
 
