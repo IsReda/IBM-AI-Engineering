@@ -16,6 +16,7 @@ Examples:
 
 import sys
 import os
+import re
 import shutil
 import subprocess
 import json
@@ -188,11 +189,14 @@ def main():
     print("\n🔍 Step 2 · Detecting chapter...")
     chapter = detect_chapter(nb, nb_path.name)
 
-    # 3. Copy to chapter folder
-    dest_dir = REPO_ROOT / chapter
+    # 3. Copy to chapter folder — strip IBM course prefixes (e.g. DL0101EN-4-1-)
+    dest_dir  = REPO_ROOT / chapter
     dest_dir.mkdir(parents=True, exist_ok=True)
-    dest = dest_dir / nb_path.name
+    clean_name = re.sub(r'^[A-Z]{2}\d{4}[A-Z]{2}-[\d\-]+-', '', nb_path.name)
+    dest = dest_dir / clean_name
     print(f"\n📁 Step 3 · Copying to {chapter}/...")
+    if clean_name != nb_path.name:
+        print(f"  ✂️  Renamed: {nb_path.name} → {clean_name}")
     shutil.copy2(nb_path, dest)
     print(f"  ✅ Saved → {dest}")
 
@@ -204,12 +208,16 @@ def main():
     else:
         print("  ⚠️  Jupytext not found — run: pip install jupytext")
 
-    # 5. Git push
+    # 5. Git push — add only the notebook file (never .DS_Store or unrelated files)
     print("\n📤 Step 5 · Pushing to GitHub...")
     msg = custom_msg or generate_commit_message(nb, nb_path.name)
-    run("git add .")
+    run(f'git add "{dest}"')
     run(f'git commit -m "{msg}"')
-    run(f"git push origin {BRANCH}")
+    result = run(f"git push origin {BRANCH}", check=False)
+    if result.returncode != 0:
+        print(f"  ⚠️  Push failed (no credentials in this environment).")
+        print(f"  Run manually from your terminal:")
+        print(f"    cd ~/claude-workspace/learning/IBM_AI_Engineering && git push")
 
     print(f"\n{'─'*40}")
     print(f"✅ Done! Pushed to GitHub → {chapter}/{nb_path.name}")
