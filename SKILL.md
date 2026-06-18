@@ -15,15 +15,15 @@ IBM_AI_Engineering/                         ← repo root
 │   ├── CLAUDE_PROMPT.md                    ← 🤖 paste in Claude each chat
 │   └── sync_notebook.py                    ← 🐍 auto-sync to GitHub
 ├── 01_ML_with_Python/
-├── 02_Deep_Learning_Keras/                 ← 📍 you are here
-├── 03_Scalable_ML_Apache_Spark/
-├── 04_Deep_Learning_PyTorch/
-├── 05_AI_Capstone_Deep_Learning/
-├── 06_ML_Capstone/
-├── 07_GenAI_LLMs_Architecture/
+├── 02_Intro_Deep_Learning_Neural_Networks_Keras/
+├── 03_Deep_Learning_Keras_TensorFlow/      ← 📍 you are here
+├── 04_Intro_Neural_Networks_PyTorch/
+├── 05_Deep_Learning_PyTorch/
+├── 06_AI_Capstone_Deep_Learning/
+├── 07_GenAI_LLMs_Architecture_Data_Prep/
 ├── 08_GenAI_Foundational_Models_NLP/
 ├── 09_GenAI_Language_Modeling_Transformers/
-├── 10_GenAI_Engineering_Fine_Tuning/
+├── 10_GenAI_Engineering_Fine_Tuning_Transformers/
 ├── 11_GenAI_Advanced_Fine_Tuning_LLMs/
 ├── 12_AI_Agents_RAG_LangChain/
 └── 13_Project_GenAI_Apps_RAG_LangChain/
@@ -147,8 +147,8 @@ pip install jupytext nbconvert
 ## 📍 Current Progress
 
 - [x] 01 · Machine Learning with Python
-- [ ] 02 · Intro to Deep Learning & Neural Networks with Keras  ← you are here
-- [ ] 03 · Deep Learning with Keras and TensorFlow
+- [x] 02 · Intro to Deep Learning & Neural Networks with Keras
+- [ ] 03 · Deep Learning with Keras and TensorFlow  ← you are here
 - [ ] 04 · Introduction to Neural Networks and PyTorch
 - [ ] 05 · Deep Learning with PyTorch
 - [ ] 06 · AI Capstone Project with Deep Learning
