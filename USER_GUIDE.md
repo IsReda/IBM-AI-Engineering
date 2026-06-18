@@ -39,7 +39,7 @@ cp /path/to/downloaded/tasks.json \
    ~/claude-workspace/learning/IBM_AI_Engineering/.vscode/
 
 # Copy reference files
-cp /path/to/downloaded/SKILL.md \
+cp /path/to/downloaded/IBM_AI_SKILLS.md \
    ~/claude-workspace/learning/IBM_AI_Engineering/
 
 cp /path/to/downloaded/USER_GUIDE.md \
@@ -247,7 +247,7 @@ pip install jupytext nbconvert
 
 1. **Keep Claude chat open** during a study session — the prompt is already set, just upload each new lab
 2. **Run cells top to bottom** in VS Code after downloading — make sure everything executes cleanly before pushing
-3. **Update the progress checklist** in `SKILL.md` as you complete each chapter
+3. **Update the progress checklist** in `IBM_AI_SKILLS.md` as you complete each chapter
 4. **Use meaningful commit messages** — your GitHub becomes your learning portfolio
 
 ---
