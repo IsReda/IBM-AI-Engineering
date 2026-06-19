@@ -1,3 +1,11 @@
+# Model files
 *.keras
+
+# macOS
 .DS_Store
+
+# Workspace tooling — not for public repo
 IBM_AI_SKILLS.md
+USER_GUIDE.md
+scripts/
+.vscode/
