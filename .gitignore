@@ -9,3 +9,6 @@ IBM_AI_SKILLS.md
 USER_GUIDE.md
 scripts/
 .vscode/
+
+# Generated outputs
+*.png
