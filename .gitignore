@@ -1,14 +1,22 @@
-# Model files
-*.keras
+# ==============================================================
+# Whitelist approach — ignore everything, then allow only what
+# belongs in the public portfolio repo.
+# ==============================================================
 
-# macOS
+# Block everything by default
+*
+
+# Allow folders (so git can traverse into them)
+!*/
+
+# Allow notebook files
+!**/*.ipynb
+!**/*.py
+
+# Allow repo essentials
+!.gitignore
+!README.md
+
+# macOS junk (belt + suspenders)
 .DS_Store
-
-# Workspace tooling — not for public repo
-IBM_AI_SKILLS.md
-USER_GUIDE.md
-scripts/
-.vscode/
-
-# Generated outputs
-*.png
+**/.DS_Store
